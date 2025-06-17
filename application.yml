@@ -6,10 +6,7 @@ eureka:
 server:
   port: 0
 
-  config:
-    import: "optional:configserver:http://localhost:8888/"
-    fail-fast: true
-
+spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://localhost:3306/ordermsa?useSSL=false&allowPublicKeyRetrieval=true
